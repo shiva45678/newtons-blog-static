@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to Newtons Newsletter</title>
+    <meta name="description" content="Stay updated with the latest insights on AI in healthcare. Subscribe to our newsletter for weekly updates and exclusive content.">
+    <meta name="keywords" content="healthcare newsletter, AI updates, medical insights, healthcare trends">
+    <meta property="og:title" content="Subscribe to Newtons Newsletter">
+    <meta property="og:description" content="Get the latest healthcare and AI insights delivered to your inbox.">
+    <link rel="canonical" href="https://yourusername.github.io/newtons-blog-static/newsletter.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        header {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #000;
+        }
+        nav a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0066cc;
+        }
+        .page-header {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .page-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .newsletter-box {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .newsletter-box h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .newsletter-box p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        .benefits {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        .benefits li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .benefits li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #00cc66;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #000;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #0066cc;
+            box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+        }
+        .btn {
+            background: #0066cc;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        .btn:hover {
+            background: #0052a3;
+        }
+        .success-message {
+            display: none;
+            background: #e8ffe8;
+            border: 1px solid #00cc66;
+            color: #00cc66;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            display: none;
+            background: #ffe8e8;
+            border: 1px solid #cc3333;
+            color: #cc3333;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Newtons</a>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="newsletter.html">Newsletter</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Stay Updated</h1>
+        <p>Subscribe to our newsletter for the latest healthcare and AI insights</p>
+    </section>
+
+    <section class="content">
+        <div class="success-message" id="successMessage">
+            ✓ Thank you for subscribing! Check your email for confirmation.
+        </div>
+        <div class="error-message" id="errorMessage">
+            ✗ There was an error. Please try again.
+        </div>
+
+        <div class="newsletter-box">
+            <h2>Join Our Community</h2>
+            <p>Get weekly insights on AI in healthcare, hospital management innovations, and patient care breakthroughs directly in your inbox.</p>
+            
+            <ul class="benefits">
+                <li>Weekly healthcare and AI insights</li>
+                <li>Exclusive industry updates</li>
+                <li>Early access to new content</li>
+                <li>Expert perspectives from Newtons</li>
+            </ul>
+
+            <form id="newsletterForm">
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <button type="submit" class="btn">Subscribe Now</button>
+            </form>
+
+            <p style="font-size: 0.85rem; color: #999; margin-top: 1rem;">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="newsletter.html">Newsletter</a>
+            </div>
+            <p>&copy; 2026 Newtons Ecosystem. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            
+            // Simulate form submission
+            console.log('Newsletter subscription:', email);
+            
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('errorMessage').style.display = 'none';
+            
+            // Reset form
+            this.reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

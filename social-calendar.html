@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Calendar - Newtons</title>
+    <meta name="description" content="View upcoming social media posts from Newtons AI, HMS, and Hospitals across LinkedIn, Instagram, Facebook, and YouTube.">
+    <meta name="keywords" content="social media calendar, healthcare marketing, Newtons updates, medical content">
+    <meta property="og:title" content="Social Media Calendar - Newtons">
+    <meta property="og:description" content="Check out upcoming posts from Newtons across all social media platforms.">
+    <link rel="canonical" href="https://yourusername.github.io/newtons-blog-static/social-calendar.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        header {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #000;
+        }
+        nav a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0066cc;
+        }
+        .page-header {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .page-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: #0066cc;
+            color: #0066cc;
+            background: #f0f5ff;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .post-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1.5rem;
+            background: #f9f9f9;
+            transition: all 0.3s;
+        }
+        .post-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+        .platform-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .platform-badge.linkedin {
+            background: #e8f0ff;
+            color: #0066cc;
+        }
+        .platform-badge.instagram {
+            background: #ffe8f0;
+            color: #e1306c;
+        }
+        .platform-badge.facebook {
+            background: #e8f0ff;
+            color: #1877f2;
+        }
+        .platform-badge.youtube {
+            background: #ffe8e8;
+            color: #ff0000;
+        }
+        .brand-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: #f0f0f0;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        .post-content {
+            margin-bottom: 1rem;
+        }
+        .post-content p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #999;
+        }
+        .scheduled-date {
+            font-weight: 600;
+            color: #0066cc;
+        }
+        .hashtags {
+            font-size: 0.85rem;
+            color: #0066cc;
+            margin-top: 0.5rem;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Newtons</a>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="newsletter.html">Newsletter</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Social Media Calendar</h1>
+        <p>Upcoming posts from Newtons across all platforms</p>
+    </section>
+
+    <section class="content">
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterPosts('all')">All Posts</button>
+            <button class="filter-btn" onclick="filterPosts('linkedin')">LinkedIn</button>
+            <button class="filter-btn" onclick="filterPosts('instagram')">Instagram</button>
+            <button class="filter-btn" onclick="filterPosts('facebook')">Facebook</button>
+            <button class="filter-btn" onclick="filterPosts('youtube')">YouTube</button>
+        </div>
+
+        <div class="calendar-grid" id="postsGrid">
+            <div class="post-card" data-platform="linkedin">
+                <div class="post-header">
+                    <span class="platform-badge linkedin">LinkedIn</span>
+                </div>
+                <span class="brand-badge">Newtons AI</span>
+                <div class="post-content">
+                    <p>🚀 Did you know? AI can now detect pneumonia in chest X-rays with 95% accuracy. That's faster and more consistent than manual review. The future of diagnostics is here. #AI #Healthcare #MedicalImaging</p>
+                </div>
+                <div class="post-meta">
+                    <span class="scheduled-date">Jun 18, 2026</span>
+                </div>
+                <div class="hashtags">#AI #Healthcare #Diagnostics #MedicalTech #Innovation</div>
+            </div>
+
+            <div class="post-card" data-platform="instagram">
+                <div class="post-header">
+                    <span class="platform-badge instagram">Instagram</span>
+                </div>
+                <span class="brand-badge">Newtons Hospitals</span>
+                <div class="post-content">
+                    <p>Experience healthcare where technology meets compassion. Our AI-powered diagnostic tools help doctors make faster, more accurate decisions. Your health, our priority. 💙 #HealthTech #MedicalInnovation</p>
+                </div>
+                <div class="post-meta">
+                    <span class="scheduled-date">Jun 16, 2026</span>
+                </div>
+                <div class="hashtags">#HealthTech #MedicalCare #AI #Hospitals #PatientCare</div>
+            </div>
+
+            <div class="post-card" data-platform="facebook">
+                <div class="post-header">
+                    <span class="platform-badge facebook">Facebook</span>
+                </div>
+                <span class="brand-badge">Newtons HMS</span>
+                <div class="post-content">
+                    <p>Hospital management just got smarter. Newtons HMS automates routine tasks so your staff can focus on what matters most—patient care. Learn how we're transforming healthcare operations.</p>
+                </div>
+                <div class="post-meta">
+                    <span class="scheduled-date">Jun 21, 2026</span>
+                </div>
+                <div class="hashtags">#HospitalManagement #HealthcareIT #Automation #MedicalTech</div>
+            </div>
+
+            <div class="post-card" data-platform="youtube">
+                <div class="post-header">
+                    <span class="platform-badge youtube">YouTube</span>
+                </div>
+                <span class="brand-badge">Newtons AI</span>
+                <div class="post-content">
+                    <p>In this video, we explore how machine learning is revolutionizing medical diagnostics. From early detection to treatment planning, AI is saving lives. Watch the full story.</p>
+                </div>
+                <div class="post-meta">
+                    <span class="scheduled-date">Jun 25, 2026</span>
+                </div>
+                <div class="hashtags">#AI #MedicalTech #Healthcare #MachineLearning #Innovation</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="newsletter.html">Newsletter</a>
+            </div>
+            <p>&copy; 2026 Newtons Ecosystem. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function filterPosts(platform) {
+            const cards = document.querySelectorAll('.post-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            cards.forEach(card => {
+                if (platform === 'all' || card.dataset.platform === platform) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
