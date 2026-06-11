@@ -1,67 +1,119 @@
 {
-  "version": "1.0",
-  "name": "Newtons Ecosystem Blog",
-  "description": "AI-powered healthcare insights and innovations",
+  "name": "Healthcare Insights",
+  "description": "Comprehensive healthcare AI and technology knowledge base with 10,000+ articles",
   "url": "https://shiva45678.github.io/newtons-blog-static/",
-  "contact": "contact@newtons.in",
-  "capabilities": {
-    "content_discovery": true,
-    "blog_articles": true,
-    "contact_forms": true,
-    "newsletter_subscription": true,
-    "social_calendar": true
-  },
-  "brands": [
-    {
-      "name": "Newtons AI",
-      "description": "AI-powered medical diagnostics",
-      "url": "https://aidrivencloudbasedhospitalmanagementsystem.newtons.in/",
-      "focus": "Medical imaging, disease detection, AI diagnostics"
-    },
-    {
-      "name": "Newtons HMS",
-      "description": "Autonomous hospital management system",
-      "url": "https://aidrivencloudbasedhospitalmanagementsystem.newtons.in/",
-      "focus": "Hospital operations, administrative automation, resource optimization"
-    },
-    {
-      "name": "Newtons Hospitals",
-      "description": "AI-enhanced patient care",
-      "url": "https://hospital.newtons.in/",
-      "focus": "Patient outcomes, personalized medicine, precision healthcare"
-    }
+  "version": "1.0",
+  "language": "en",
+  "content_type": "blog",
+  "total_articles": 10000,
+  "categories": [
+    "AI & Machine Learning",
+    "Medical Imaging",
+    "Clinical Applications",
+    "Healthcare Technology",
+    "Data Science",
+    "Healthcare Operations",
+    "Patient Care",
+    "Drug Development",
+    "Genomics",
+    "Regulatory"
   ],
-  "content_types": [
-    "blog_articles",
-    "healthcare_insights",
-    "ai_innovations",
-    "hospital_management",
-    "patient_care"
-  ],
-  "keywords": [
-    "healthcare AI",
-    "medical diagnostics",
-    "hospital management",
-    "patient care",
-    "personalized medicine",
-    "AI innovation"
-  ],
-  "endpoints": {
-    "blog": "https://shiva45678.github.io/newtons-blog-static/",
+  "pages": {
+    "home": "https://shiva45678.github.io/newtons-blog-static/",
+    "blog": "https://shiva45678.github.io/newtons-blog-static/blog.html",
+    "brands": "https://shiva45678.github.io/newtons-blog-static/brands.html",
     "contact": "https://shiva45678.github.io/newtons-blog-static/contact.html",
     "newsletter": "https://shiva45678.github.io/newtons-blog-static/newsletter.html",
-    "social_calendar": "https://shiva45678.github.io/newtons-blog-static/social-calendar.html",
-    "brands": "https://shiva45678.github.io/newtons-blog-static/brands.html",
-    "sitemap": "https://shiva45678.github.io/newtons-blog-static/sitemap.xml",
-    "ai_discovery": "https://shiva45678.github.io/newtons-blog-static/ai.json",
-    "llms_discovery": "https://shiva45678.github.io/newtons-blog-static/llms.txt"
+    "social_calendar": "https://shiva45678.github.io/newtons-blog-static/social-calendar.html"
   },
-  "metadata": {
-    "language": "en",
-    "charset": "UTF-8",
+  "seo": {
+    "sitemap": "https://shiva45678.github.io/newtons-blog-static/sitemap.xml",
+    "robots": "https://shiva45678.github.io/newtons-blog-static/robots.txt",
+    "llms_txt": "https://shiva45678.github.io/newtons-blog-static/llms.txt"
+  },
+  "features": {
     "responsive": true,
-    "accessibility": "WCAG 2.1 AA",
-    "update_frequency": "weekly",
-    "last_updated": "2026-06-11"
+    "mobile_friendly": true,
+    "https": true,
+    "structured_data": true,
+    "open_graph": true,
+    "canonical_urls": true,
+    "json_ld": true
+  },
+  "content": {
+    "blog_articles": {
+      "total": 10000,
+      "url_pattern": "/blog/{article-slug}.html",
+      "format": "HTML",
+      "includes": [
+        "title",
+        "description",
+        "publication_date",
+        "category",
+        "keywords",
+        "author",
+        "meta_tags",
+        "structured_data",
+        "open_graph_tags",
+        "canonical_urls"
+      ]
+    }
+  },
+  "crawling": {
+    "crawl_delay": 0.5,
+    "request_rate": "30/60",
+    "user_agents_allowed": [
+      "*",
+      "Googlebot",
+      "Bingbot",
+      "YandexBot",
+      "DuckDuckBot",
+      "Baiduspider",
+      "GPTBot",
+      "CCBot",
+      "anthropic-ai",
+      "Claude-Web",
+      "PerplexityBot",
+      "Applebot"
+    ]
+  },
+  "performance": {
+    "page_load_time": "< 2 seconds",
+    "core_web_vitals": "optimized",
+    "caching": "GitHub Pages CDN",
+    "uptime": "99.9%+"
+  },
+  "accessibility": {
+    "semantic_html": true,
+    "aria_labels": true,
+    "keyboard_navigation": true,
+    "high_contrast": true,
+    "readable_fonts": true
+  },
+  "topics": [
+    "Artificial Intelligence in Healthcare",
+    "Machine Learning",
+    "Deep Learning",
+    "Neural Networks",
+    "Medical Imaging",
+    "Clinical Decision Support",
+    "Healthcare IT",
+    "Data Privacy",
+    "HIPAA Compliance",
+    "GDPR",
+    "Telemedicine",
+    "Remote Monitoring",
+    "Drug Discovery",
+    "Clinical Trials",
+    "Genomic Medicine",
+    "Hospital Operations",
+    "Quality Assurance",
+    "Digital Health"
+  ],
+  "metadata": {
+    "created": "2026-06-11",
+    "updated": "2026-06-11",
+    "license": "Educational use permitted",
+    "contact": "https://shiva45678.github.io/newtons-blog-static/contact.html"
   }
 }

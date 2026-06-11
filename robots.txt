@@ -1,26 +1,93 @@
-# Robots.txt for Newtons Ecosystem Blog
-# Allows search engines to crawl all content
+# Healthcare Insights - Robots.txt
+# Last Updated: June 11, 2026
 
+# Allow all search engines
 User-agent: *
 Allow: /
-Allow: /blog/
 Allow: /index.html
 Allow: /blog.html
+Allow: /blog/
+Allow: /brands.html
 Allow: /contact.html
 Allow: /newsletter.html
 Allow: /social-calendar.html
-Allow: /brands.html
+Allow: /sitemap.xml
+Allow: /llms.txt
+Allow: /ai.json
+Allow: /.well-known/
 
-# Disallow private/admin areas (none in this static site)
+# Disallow private/admin pages (none in this static site)
 Disallow: /admin/
-Disallow: /*.php$
-Disallow: /*?*
+Disallow: /private/
+Disallow: /temp/
+
+# Crawl delay and request rate
+Crawl-delay: 0.5
+Request-rate: 30/60
 
 # Sitemap location
 Sitemap: https://shiva45678.github.io/newtons-blog-static/sitemap.xml
 
-# Crawl delay (optional - allows 1 request per second)
+# Google-specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing-specific
+User-agent: Bingbot
+Allow: /
 Crawl-delay: 1
 
-# Request rate (optional)
-Request-rate: 1/1s
+# Yandex-specific
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 0.5
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+
+# AI Agents and LLMs
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 1
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 1
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Applebot
+Allow: /
+Crawl-delay: 1
+
+# Deny bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Cache control
+# Note: GitHub Pages handles caching headers
+
+# Contact
+# For questions about this robots.txt, visit https://shiva45678.github.io/newtons-blog-static/
