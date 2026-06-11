@@ -1,7 +1,7 @@
 {
   "name": "Healthcare Insights",
   "description": "Comprehensive healthcare AI and technology knowledge base with 10,000+ articles",
-  "url": "https://shiva45678.github.io/newtons-blog-static/",
+  "url": "https://blog.newtons.in/",
   "version": "1.0",
   "language": "en",
   "content_type": "blog",
@@ -19,17 +19,17 @@
     "Regulatory"
   ],
   "pages": {
-    "home": "https://shiva45678.github.io/newtons-blog-static/",
-    "blog": "https://shiva45678.github.io/newtons-blog-static/blog.html",
-    "brands": "https://shiva45678.github.io/newtons-blog-static/brands.html",
-    "contact": "https://shiva45678.github.io/newtons-blog-static/contact.html",
-    "newsletter": "https://shiva45678.github.io/newtons-blog-static/newsletter.html",
-    "social_calendar": "https://shiva45678.github.io/newtons-blog-static/social-calendar.html"
+    "home": "https://blog.newtons.in/",
+    "blog": "https://blog.newtons.in/blog.html",
+    "brands": "https://blog.newtons.in/brands.html",
+    "contact": "https://blog.newtons.in/contact.html",
+    "newsletter": "https://blog.newtons.in/newsletter.html",
+    "social_calendar": "https://blog.newtons.in/social-calendar.html"
   },
   "seo": {
-    "sitemap": "https://shiva45678.github.io/newtons-blog-static/sitemap.xml",
-    "robots": "https://shiva45678.github.io/newtons-blog-static/robots.txt",
-    "llms_txt": "https://shiva45678.github.io/newtons-blog-static/llms.txt"
+    "sitemap": "https://blog.newtons.in/sitemap.xml",
+    "robots": "https://blog.newtons.in/robots.txt",
+    "llms_txt": "https://blog.newtons.in/llms.txt"
   },
   "features": {
     "responsive": true,
@@ -114,6 +114,6 @@
     "created": "2026-06-11",
     "updated": "2026-06-11",
     "license": "Educational use permitted",
-    "contact": "https://shiva45678.github.io/newtons-blog-static/contact.html"
+    "contact": "https://blog.newtons.in/contact.html"
   }
 }

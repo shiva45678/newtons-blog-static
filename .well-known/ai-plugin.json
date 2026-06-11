@@ -9,12 +9,12 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://shiva45678.github.io/newtons-blog-static/openapi.json",
+    "url": "https://blog.newtons.in/openapi.json",
     "is_user_authenticated": false
   },
-  "logo_url": "https://shiva45678.github.io/newtons-blog-static/logo.png",
+  "logo_url": "https://blog.newtons.in/logo.png",
   "contact_email": "contact@newtons.in",
-  "legal_info_url": "https://shiva45678.github.io/newtons-blog-static/legal.html",
+  "legal_info_url": "https://blog.newtons.in/legal.html",
   "categories": [
     "healthcare",
     "ai",

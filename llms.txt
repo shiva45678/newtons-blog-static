@@ -4,7 +4,7 @@
 
 ## Site Information
 - Name: Healthcare Insights
-- URL: https://shiva45678.github.io/newtons-blog-static/
+- URL: https://blog.newtons.in/
 - Description: Comprehensive healthcare AI and technology knowledge base with 10,000+ articles
 - Language: English
 - Content Type: Educational Blog
@@ -40,12 +40,12 @@
 - Digital Health Transformation
 
 ## Main Pages
-- Homepage: https://shiva45678.github.io/newtons-blog-static/
-- Blog Listing: https://shiva45678.github.io/newtons-blog-static/blog.html
-- Brand Showcase: https://shiva45678.github.io/newtons-blog-static/brands.html
-- Contact: https://shiva45678.github.io/newtons-blog-static/contact.html
-- Newsletter: https://shiva45678.github.io/newtons-blog-static/newsletter.html
-- Social Calendar: https://shiva45678.github.io/newtons-blog-static/social-calendar.html
+- Homepage: https://blog.newtons.in/
+- Blog Listing: https://blog.newtons.in/blog.html
+- Brand Showcase: https://blog.newtons.in/brands.html
+- Contact: https://blog.newtons.in/contact.html
+- Newsletter: https://blog.newtons.in/newsletter.html
+- Social Calendar: https://blog.newtons.in/social-calendar.html
 
 ## Blog Articles
 - Total: 10,000+ unique articles
@@ -61,8 +61,8 @@
   * Canonical URLs
 
 ## SEO Features
-- XML Sitemap: https://shiva45678.github.io/newtons-blog-static/sitemap.xml
-- Robots.txt: https://shiva45678.github.io/newtons-blog-static/robots.txt
+- XML Sitemap: https://blog.newtons.in/sitemap.xml
+- Robots.txt: https://blog.newtons.in/robots.txt
 - Meta Tags: All pages include comprehensive meta descriptions and keywords
 - Structured Data: JSON-LD BlogPosting schema on all articles
 - Open Graph: Social sharing metadata on all pages
@@ -132,7 +132,7 @@
 
 ## Contact and Attribution
 - Site: Healthcare Insights
-- URL: https://shiva45678.github.io/newtons-blog-static/
+- URL: https://blog.newtons.in/
 - Content: Original and curated healthcare AI knowledge
 - License: Educational use permitted
 
@@ -150,7 +150,7 @@
 - SEO optimization ongoing
 
 ## Additional Resources
-- Sitemap: https://shiva45678.github.io/newtons-blog-static/sitemap.xml
-- Robots: https://shiva45678.github.io/newtons-blog-static/robots.txt
-- AI JSON: https://shiva45678.github.io/newtons-blog-static/ai.json
-- Well-Known AI: https://shiva45678.github.io/newtons-blog-static/.well-known/ai.json
+- Sitemap: https://blog.newtons.in/sitemap.xml
+- Robots: https://blog.newtons.in/robots.txt
+- AI JSON: https://blog.newtons.in/ai.json
+- Well-Known AI: https://blog.newtons.in/.well-known/ai.json

@@ -26,7 +26,7 @@ Crawl-delay: 0.5
 Request-rate: 30/60
 
 # Sitemap location
-Sitemap: https://shiva45678.github.io/newtons-blog-static/sitemap.xml
+Sitemap: https://blog.newtons.in/sitemap.xml
 
 # Google-specific
 User-agent: Googlebot
@@ -90,4 +90,4 @@ Disallow: /
 # Note: GitHub Pages handles caching headers
 
 # Contact
-# For questions about this robots.txt, visit https://shiva45678.github.io/newtons-blog-static/
+# For questions about this robots.txt, visit https://blog.newtons.in/
