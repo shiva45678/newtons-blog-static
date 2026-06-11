@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=index.html">
-    <title>Redirecting to Blog...</title>
-    <meta name="description" content="Read the latest articles on AI in healthcare, hospital management, and medical innovation from the Newtons ecosystem.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare AI Blog - Newtons Insights & Articles</title>
+    <meta name="description" content="Read expert articles on healthcare AI, medical diagnostics, hospital management, and personalized patient care from the Newtons Ecosystem.">
     <meta name="keywords" content="healthcare blog, AI insights, medical technology, hospital management, healthcare innovation">
-    <meta property="og:title" content="Healthcare & AI Insights - Newtons Blog">
+    <meta property="og:title" content="Healthcare AI Blog - Newtons Insights & Articles">
     <meta property="og:description" content="Explore articles on AI in healthcare, hospital management, and medical innovation.">
-    <link rel="canonical" href="https://yourusername.github.io/newtons-blog-static/blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shiva45678.github.io/newtons-blog-static/blog.html">
+    <link rel="canonical" href="https://shiva45678.github.io/newtons-blog-static/blog.html">
     <style>
         * {
             margin: 0;
@@ -40,12 +42,14 @@
             font-size: 1.5rem;
             font-weight: 700;
             color: #000;
+            text-decoration: none;
         }
         nav a {
             margin-left: 2rem;
             text-decoration: none;
             color: #666;
             transition: color 0.3s;
+            font-weight: 500;
         }
         nav a:hover {
             color: #0066cc;
@@ -58,6 +62,7 @@
         .page-header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
+            font-weight: 800;
         }
         .page-header p {
             color: #666;
@@ -73,15 +78,17 @@
             gap: 1rem;
             margin-bottom: 2rem;
             flex-wrap: wrap;
+            justify-content: center;
         }
         .filter-btn {
-            padding: 0.5rem 1.5rem;
+            padding: 0.6rem 1.5rem;
             border: 2px solid #ddd;
             background: white;
             border-radius: 25px;
             cursor: pointer;
             transition: all 0.3s;
             font-weight: 500;
+            font-size: 0.95rem;
         }
         .filter-btn:hover,
         .filter-btn.active {
@@ -91,7 +98,7 @@
         }
         .blog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
             gap: 2rem;
         }
         .blog-card {
@@ -99,22 +106,23 @@
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: all 0.3s;
+            background: white;
         }
         .blog-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
         .blog-card-content {
-            padding: 1.5rem;
+            padding: 1.75rem;
         }
         .blog-category {
             display: inline-block;
             background: #e8f0ff;
             color: #0066cc;
-            padding: 0.25rem 0.75rem;
+            padding: 0.3rem 0.8rem;
             border-radius: 4px;
-            font-size: 0.85rem;
-            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+            margin-bottom: 0.75rem;
             font-weight: 600;
         }
         .blog-category.hms {
@@ -126,13 +134,15 @@
             color: #cc3333;
         }
         .blog-card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
         }
         .blog-card p {
             color: #666;
             font-size: 0.95rem;
             margin-bottom: 1rem;
+            line-height: 1.7;
         }
         .blog-meta {
             display: flex;
@@ -154,6 +164,7 @@
             color: #fff;
             padding: 3rem 2rem;
             text-align: center;
+            margin-top: 3rem;
         }
         .footer-content {
             max-width: 1200px;
@@ -169,6 +180,7 @@
         .footer-links a {
             color: #ccc;
             text-decoration: none;
+            font-weight: 500;
         }
         .footer-links a:hover {
             color: #fff;
@@ -192,7 +204,7 @@
         <nav>
             <a href="index.html" class="logo">Newtons</a>
             <div>
-                <a href="index.html">Home</a>
+                <a href="index.html">Brands</a>
                 <a href="blog.html">Blog</a>
                 <a href="contact.html">Contact</a>
                 <a href="newsletter.html">Newsletter</a>
@@ -201,8 +213,8 @@
     </header>
 
     <section class="page-header">
-        <h1>Healthcare & AI Insights</h1>
-        <p>Discover the latest articles on AI in healthcare, hospital management, and medical innovation</p>
+        <h1>Healthcare AI Insights</h1>
+        <p>Expert articles on medical innovation, hospital management, and healthcare transformation</p>
     </section>
 
     <section class="content">
@@ -232,7 +244,7 @@
                     <h3>Autonomous Hospital Management: The Next Era of Healthcare Operations</h3>
                     <p>Hospital management has always been complex. From patient scheduling to inventory management, billing to staff coordination—there are countless moving parts. Now, AI-powered autonomous systems are streamlining these operations in ways never before possible.</p>
                     <div class="blog-meta">
-                        <span>Healthcare Operations Expert</span>
+                        <span>Healthcare Expert</span>
                         <a href="blog/autonomous-hospital-management.html" class="read-more">Read More →</a>
                     </div>
                 </div>
@@ -255,10 +267,11 @@
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <a href="index.html">Home</a>
+                <a href="index.html">Brands</a>
                 <a href="blog.html">Blog</a>
                 <a href="contact.html">Contact</a>
                 <a href="newsletter.html">Newsletter</a>
+                <a href="social-calendar.html">Social Calendar</a>
             </div>
             <p>&copy; 2026 Newtons Ecosystem. All rights reserved.</p>
         </div>
@@ -280,6 +293,16 @@
                 }
             });
         }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Healthcare AI Blog",
+        "description": "Articles on healthcare AI, medical diagnostics, and hospital management",
+        "url": "https://shiva45678.github.io/newtons-blog-static/blog.html"
+    }
     </script>
 </body>
 </html>
