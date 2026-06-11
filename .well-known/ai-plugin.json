@@ -1,0 +1,33 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Newtons Ecosystem Blog",
+  "name_for_model": "newtons_ecosystem_blog",
+  "description_for_human": "Access healthcare AI insights, hospital management innovations, and patient care breakthroughs from the Newtons Ecosystem",
+  "description_for_model": "This plugin provides access to the Newtons Ecosystem Blog with articles about AI in healthcare, hospital management systems, and personalized patient care. It includes blog articles, contact forms, newsletter subscriptions, and social media calendar information.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://shiva45678.github.io/newtons-blog-static/openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://shiva45678.github.io/newtons-blog-static/logo.png",
+  "contact_email": "contact@newtons.in",
+  "legal_info_url": "https://shiva45678.github.io/newtons-blog-static/legal.html",
+  "categories": [
+    "healthcare",
+    "ai",
+    "medical",
+    "blog",
+    "content"
+  ],
+  "tags": [
+    "healthcare-ai",
+    "medical-diagnostics",
+    "hospital-management",
+    "patient-care",
+    "personalized-medicine",
+    "ai-innovation"
+  ]
+}

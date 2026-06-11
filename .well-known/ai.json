@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "name": "Newtons Ecosystem Blog",
+  "description": "AI-powered healthcare insights and innovations",
+  "url": "https://shiva45678.github.io/newtons-blog-static/",
+  "contact": "contact@newtons.in",
+  "capabilities": {
+    "content_discovery": true,
+    "blog_articles": true,
+    "contact_forms": true,
+    "newsletter_subscription": true,
+    "social_calendar": true
+  },
+  "brands": [
+    {
+      "name": "Newtons AI",
+      "description": "AI-powered medical diagnostics",
+      "url": "https://aidrivencloudbasedhospitalmanagementsystem.newtons.in/",
+      "focus": "Medical imaging, disease detection, AI diagnostics"
+    },
+    {
+      "name": "Newtons HMS",
+      "description": "Autonomous hospital management system",
+      "url": "https://aidrivencloudbasedhospitalmanagementsystem.newtons.in/",
+      "focus": "Hospital operations, administrative automation, resource optimization"
+    },
+    {
+      "name": "Newtons Hospitals",
+      "description": "AI-enhanced patient care",
+      "url": "https://hospital.newtons.in/",
+      "focus": "Patient outcomes, personalized medicine, precision healthcare"
+    }
+  ],
+  "content_types": [
+    "blog_articles",
+    "healthcare_insights",
+    "ai_innovations",
+    "hospital_management",
+    "patient_care"
+  ],
+  "keywords": [
+    "healthcare AI",
+    "medical diagnostics",
+    "hospital management",
+    "patient care",
+    "personalized medicine",
+    "AI innovation"
+  ],
+  "endpoints": {
+    "blog": "https://shiva45678.github.io/newtons-blog-static/",
+    "contact": "https://shiva45678.github.io/newtons-blog-static/contact.html",
+    "newsletter": "https://shiva45678.github.io/newtons-blog-static/newsletter.html",
+    "social_calendar": "https://shiva45678.github.io/newtons-blog-static/social-calendar.html",
+    "brands": "https://shiva45678.github.io/newtons-blog-static/brands.html",
+    "sitemap": "https://shiva45678.github.io/newtons-blog-static/sitemap.xml",
+    "ai_discovery": "https://shiva45678.github.io/newtons-blog-static/ai.json",
+    "llms_discovery": "https://shiva45678.github.io/newtons-blog-static/llms.txt"
+  },
+  "metadata": {
+    "language": "en",
+    "charset": "UTF-8",
+    "responsive": true,
+    "accessibility": "WCAG 2.1 AA",
+    "update_frequency": "weekly",
+    "last_updated": "2026-06-11"
+  }
+}

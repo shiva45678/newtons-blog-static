@@ -1,0 +1,188 @@
+# Newtons Ecosystem Blog - LLM Discovery File
+
+## Site Information
+- **Name**: Newtons Ecosystem Blog
+- **Description**: AI-powered healthcare solutions and insights from Newtons AI, Newtons HMS, and Newtons Hospitals
+- **URL**: https://shiva45678.github.io/newtons-blog-static/
+- **Language**: English
+- **Last Updated**: 2026-06-11
+
+## Organization
+- **Name**: Newtons Ecosystem
+- **Focus**: Healthcare AI, Hospital Management Systems, Patient Care Innovation
+- **Brands**: Newtons AI, Newtons HMS, Newtons Hospitals
+
+## Content Categories
+
+### Newtons AI
+- **Focus**: Artificial Intelligence in Medical Diagnostics
+- **Key Topics**: Medical imaging, AI diagnostics, disease detection, machine learning
+- **Latest Article**: "The Future of Diagnostics: How AI is Revolutionizing Medical Imaging"
+- **URL**: https://shiva45678.github.io/newtons-blog-static/blog/ai-diagnostics-medical-imaging.html
+
+### Newtons HMS
+- **Focus**: Autonomous Hospital Management Systems
+- **Key Topics**: Hospital operations, administrative automation, resource optimization, clinical workflows
+- **Latest Article**: "Autonomous Hospital Management: The Next Era of Healthcare Operations"
+- **URL**: https://shiva45678.github.io/newtons-blog-static/blog/autonomous-hospital-management.html
+
+### Newtons Hospitals
+- **Focus**: AI-Powered Patient Care and Personalized Medicine
+- **Key Topics**: Patient outcomes, personalized medicine, precision healthcare, AI-enhanced care
+- **Latest Article**: "AI-Powered Patient Care: Delivering Personalized Medicine at Scale"
+- **URL**: https://shiva45678.github.io/newtons-blog-static/blog/ai-powered-patient-care.html
+
+## Key Pages
+
+### Blog
+- **URL**: https://shiva45678.github.io/newtons-blog-static/
+- **Description**: All blog articles organized by brand and category
+- **Features**: Search, filtering by brand, full-text content
+
+### Contact
+- **URL**: https://shiva45678.github.io/newtons-blog-static/contact.html
+- **Description**: Inquiry form for franchise, HMS demo, and AI trial requests
+- **Inquiry Types**: 
+  - Franchise inquiries
+  - HMS demo requests
+  - AI trial sign-ups
+
+### Newsletter
+- **URL**: https://shiva45678.github.io/newtons-blog-static/newsletter.html
+- **Description**: Email subscription for healthcare and AI insights
+
+### Social Calendar
+- **URL**: https://shiva45678.github.io/newtons-blog-static/social-calendar.html
+- **Description**: Upcoming social media posts across LinkedIn, Instagram, Facebook, YouTube
+
+### Brand Showcase
+- **URL**: https://shiva45678.github.io/newtons-blog-static/brands.html
+- **Description**: Detailed information about each Newtons brand
+
+## Data Formats
+
+### Blog Articles
+- **Format**: HTML with embedded JSON-LD structured data
+- **Schema**: BlogPosting
+- **Fields**: headline, description, datePublished, author, publisher, content
+
+### Organization Data
+- **Format**: JSON-LD
+- **Schema**: Organization
+- **Fields**: name, description, url, sameAs (social profiles)
+
+## API Endpoints (Static Site)
+- **Blog Listing**: /index.html (JSON-LD embedded)
+- **Blog Post**: /blog/*.html (JSON-LD embedded)
+- **Sitemap**: /sitemap.xml (XML format)
+- **Robots**: /robots.txt
+
+## Keywords & Topics
+
+### Primary Keywords
+- Healthcare AI
+- Medical diagnostics
+- Hospital management system
+- AI-powered patient care
+- Personalized medicine
+- Autonomous healthcare
+- Medical imaging AI
+- Healthcare innovation
+- Precision medicine
+- AI in healthcare
+
+### Secondary Keywords
+- Machine learning healthcare
+- Clinical decision support
+- Hospital operations
+- Healthcare automation
+- Medical technology
+- Healthcare efficiency
+- Patient outcomes
+- Healthcare trends
+- Digital health
+- Medical AI
+
+## Social Media Presence
+- **LinkedIn**: Newtons AI, Newtons HMS, Newtons Hospitals
+- **Instagram**: @newtonsai, @newtonshms, @newtonshospitals
+- **Facebook**: Newtons Ecosystem
+- **YouTube**: Newtons Healthcare Channel
+
+## Contact Information
+- **Email**: contact@newtons.in
+- **Website**: https://newtons.in
+- **Support**: support@newtons.in
+
+## Technical Details
+
+### SEO Optimization
+- Meta descriptions on all pages
+- Open Graph tags for social sharing
+- Canonical URLs
+- Mobile-responsive design
+- Fast loading times (static HTML)
+- XML sitemap for search engines
+- robots.txt for crawler guidance
+
+### Accessibility
+- Semantic HTML structure
+- ARIA labels where applicable
+- Keyboard navigation support
+- Color contrast compliance
+- Mobile-first responsive design
+
+### Performance
+- Static HTML (no server processing)
+- Optimized file sizes
+- Minimal external dependencies
+- Fast page load times
+- CDN-ready structure
+
+## Content Update Frequency
+- **Blog**: Weekly new articles
+- **Social Calendar**: Updated bi-weekly
+- **Newsletter**: Weekly distribution
+- **Brand Information**: As needed
+
+## License & Attribution
+- **Copyright**: © 2026 Newtons Ecosystem. All rights reserved.
+- **Usage**: Content available for reading and sharing
+- **Attribution**: Required when republishing
+
+## Additional Resources
+- **Sitemap**: https://shiva45678.github.io/newtons-blog-static/sitemap.xml
+- **Robots**: https://shiva45678.github.io/newtons-blog-static/robots.txt
+- **AI Discovery**: https://shiva45678.github.io/newtons-blog-static/ai.json
+- **LLM Discovery**: https://shiva45678.github.io/newtons-blog-static/llms.txt (this file)
+
+## Integration Guidelines for AI Agents
+
+### For Content Crawling
+- Respect robots.txt directives
+- Use canonical URLs to avoid duplicates
+- Parse JSON-LD structured data for accurate information
+- Follow robots meta tags
+
+### For Data Extraction
+- All blog content is in HTML format
+- Structured data available in JSON-LD format
+- Contact information in contact.html
+- Social media links in footer sections
+
+### For Link Following
+- All internal links use relative paths
+- External links point to official Newtons websites
+- Social links point to verified social media profiles
+
+## Metadata
+- **Generator**: Static HTML Site Generator
+- **Charset**: UTF-8
+- **Language**: en-US
+- **Viewport**: width=device-width, initial-scale=1.0
+- **Theme Color**: #0066cc (Newtons AI Blue)
+
+---
+
+Last updated: June 11, 2026
+For questions or updates, contact: contact@newtons.in

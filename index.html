@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newtons Ecosystem - AI-Powered Healthcare Solutions</title>
-    <meta name="description" content="Explore the future of healthcare with Newtons AI, Newtons HMS, and Newtons Hospitals. Discover how artificial intelligence is revolutionizing medical diagnostics, hospital management, and patient care.">
-    <meta name="keywords" content="healthcare AI, medical technology, hospital management, AI diagnostics, personalized medicine">
-    <meta property="og:title" content="Newtons Ecosystem - AI-Powered Healthcare Solutions">
+    <title>Newtons Ecosystem - Healthcare AI Insights & Blog</title>
+    <meta name="description" content="Explore the future of healthcare with insights from Newtons AI, Newtons HMS, and Newtons Hospitals. Read articles on AI diagnostics, hospital management, and personalized patient care.">
+    <meta name="keywords" content="healthcare AI, medical diagnostics, hospital management, AI innovation, patient care, personalized medicine">
+    <meta property="og:title" content="Newtons Ecosystem - Healthcare AI Insights & Blog">
     <meta property="og:description" content="Discover how artificial intelligence is revolutionizing healthcare with Newtons AI, HMS, and Hospitals.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io/newtons-blog-static/">
-    <link rel="canonical" href="https://yourusername.github.io/newtons-blog-static/">
+    <meta property="og:url" content="https://shiva45678.github.io/newtons-blog-static/">
+    <link rel="canonical" href="https://shiva45678.github.io/newtons-blog-static/">
+    <link rel="alternate" type="application/json" href="/ai.json">
+    <link rel="alternate" type="text/plain" href="/llms.txt">
     <style>
         * {
             margin: 0;
@@ -54,7 +56,7 @@
         }
         .hero {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 6rem 2rem;
+            padding: 3rem 2rem;
             text-align: center;
         }
         .hero-content {
@@ -62,7 +64,7 @@
             margin: 0 auto;
         }
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
             color: #000;
             line-height: 1.2;
@@ -74,7 +76,7 @@
             background-clip: text;
         }
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #555;
             margin-bottom: 2rem;
         }
@@ -114,69 +116,44 @@
         .section {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 4rem 2rem;
+            padding: 3rem 2rem;
         }
         .section h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 0.5rem;
             text-align: center;
         }
         .section-subtitle {
             text-align: center;
             color: #666;
-            margin-bottom: 3rem;
-            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            font-size: 1rem;
         }
-        .brands-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        .brand-card {
-            border: 2px solid #eee;
-            border-radius: 12px;
-            padding: 2rem;
-            text-align: center;
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 25px;
+            cursor: pointer;
             transition: all 0.3s;
+            font-weight: 500;
         }
-        .brand-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .brand-card.ai {
-            border-top: 4px solid #0066cc;
-        }
-        .brand-card.hms {
-            border-top: 4px solid #00cc66;
-        }
-        .brand-card.hospitals {
-            border-top: 4px solid #cc3333;
-        }
-        .brand-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .brand-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-        .brand-tag {
-            display: inline-block;
-            background: #f0f0f0;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: #666;
-            margin-bottom: 1rem;
-        }
-        .brand-card p {
-            color: #666;
-            line-height: 1.6;
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: #0066cc;
+            color: #0066cc;
+            background: #f0f5ff;
         }
         .blog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 2rem;
         }
         .blog-card {
@@ -200,6 +177,15 @@
             border-radius: 4px;
             font-size: 0.85rem;
             margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .blog-category.hms {
+            background: #e8ffe8;
+            color: #00cc66;
+        }
+        .blog-category.hospitals {
+            background: #ffe8e8;
+            color: #cc3333;
         }
         .blog-card h3 {
             font-size: 1.25rem;
@@ -224,6 +210,47 @@
         }
         .read-more:hover {
             text-decoration: underline;
+        }
+        .brands-section {
+            background: #f9f9f9;
+        }
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .brand-card {
+            border: 2px solid #eee;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .brand-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+        }
+        .brand-card.ai {
+            border-top: 4px solid #0066cc;
+        }
+        .brand-card.hms {
+            border-top: 4px solid #00cc66;
+        }
+        .brand-card.hospitals {
+            border-top: 4px solid #cc3333;
+        }
+        .brand-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .brand-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .brand-card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
         }
         footer {
             background: #1a1a1a;
@@ -251,10 +278,7 @@
         }
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2rem;
-            }
-            .cta-buttons {
-                flex-direction: column;
+                font-size: 1.8rem;
             }
             nav {
                 flex-direction: column;
@@ -271,63 +295,42 @@
         <nav>
             <div class="logo">Newtons</div>
             <div>
-                <a href="#home">Home</a>
-                <a href="blog.html">Blog</a>
+                <a href="index.html">Blog</a>
+                <a href="brands.html">Brands</a>
                 <a href="contact.html">Contact</a>
                 <a href="newsletter.html">Newsletter</a>
             </div>
         </nav>
     </header>
 
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Revolutionizing Healthcare with <span class="gradient">Artificial Intelligence</span></h1>
-            <p>Explore the future of medical technology through insights, innovations, and real-world applications from the Newtons ecosystem.</p>
+            <h1>Healthcare AI <span class="gradient">Insights & Innovation</span></h1>
+            <p>Explore the future of medical technology through articles on AI diagnostics, autonomous hospital management, and personalized patient care from the Newtons Ecosystem.</p>
             <div class="cta-buttons">
-                <a href="blog.html" class="btn btn-primary">Explore All Articles</a>
-                <a href="#brands" class="btn btn-secondary">Learn About Our Brands</a>
+                <a href="#articles" class="btn btn-primary">Read Articles</a>
+                <a href="brands.html" class="btn btn-secondary">Explore Brands</a>
             </div>
         </div>
     </section>
 
-    <section class="section" id="brands">
-        <h2>The Newtons Ecosystem</h2>
-        <p class="section-subtitle">Three complementary platforms transforming healthcare delivery</p>
+    <section class="section" id="articles">
+        <h2>Latest Healthcare AI Articles</h2>
+        <p class="section-subtitle">Insights and innovations from Newtons AI, HMS, and Hospitals</p>
         
-        <div class="brands-grid">
-            <div class="brand-card ai">
-                <div class="brand-icon">⚡</div>
-                <h3>Newtons AI</h3>
-                <span class="brand-tag">AI-POWERED DIAGNOSTICS</span>
-                <p>Empowering doctors with intelligent diagnostic tools that analyze medical images with unprecedented accuracy and speed, enabling early disease detection and better patient outcomes.</p>
-            </div>
-            
-            <div class="brand-card hms">
-                <div class="brand-icon">🏥</div>
-                <h3>Newtons HMS</h3>
-                <span class="brand-tag">SMART HOSPITAL OPERATIONS</span>
-                <p>The world's first fully autonomous hospital management system that streamlines administrative workflows, optimizes resource allocation, and lets medical staff focus on patient care.</p>
-            </div>
-            
-            <div class="brand-card hospitals">
-                <div class="brand-icon">❤️</div>
-                <h3>Newtons Hospitals</h3>
-                <span class="brand-tag">AI-ENHANCED PATIENT CARE</span>
-                <p>No. 1 AI Hospitals where clinical excellence meets cutting-edge technology, delivering personalized, precision medicine powered by advanced artificial intelligence and data analytics.</p>
-            </div>
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterBlog('all')">All Articles</button>
+            <button class="filter-btn" onclick="filterBlog('ai')">Newtons AI</button>
+            <button class="filter-btn" onclick="filterBlog('hms')">Newtons HMS</button>
+            <button class="filter-btn" onclick="filterBlog('hospitals')">Newtons Hospitals</button>
         </div>
-    </section>
 
-    <section class="section" style="background: #f9f9f9;">
-        <h2>Latest Articles</h2>
-        <p class="section-subtitle">Insights and innovations from the Newtons ecosystem</p>
-        
-        <div class="blog-grid">
-            <div class="blog-card">
+        <div class="blog-grid" id="blogGrid">
+            <div class="blog-card" data-category="ai">
                 <div class="blog-card-content">
                     <span class="blog-category">Newtons AI</span>
                     <h3>The Future of Diagnostics: How AI is Revolutionizing Medical Imaging</h3>
-                    <p>Artificial intelligence is fundamentally transforming how doctors diagnose diseases. Learn how AI systems now detect abnormalities with accuracy that rivals experienced radiologists.</p>
+                    <p>Artificial intelligence is fundamentally transforming how doctors diagnose diseases. With machine learning algorithms trained on millions of medical images, AI systems can now detect abnormalities with accuracy that rivals or exceeds experienced radiologists.</p>
                     <div class="blog-meta">
                         <span>Dr. Shiva Kolli</span>
                         <a href="blog/ai-diagnostics-medical-imaging.html" class="read-more">Read More →</a>
@@ -335,11 +338,11 @@
                 </div>
             </div>
 
-            <div class="blog-card">
+            <div class="blog-card" data-category="hms">
                 <div class="blog-card-content">
-                    <span class="blog-category">Newtons HMS</span>
+                    <span class="blog-category hms">Newtons HMS</span>
                     <h3>Autonomous Hospital Management: The Next Era of Healthcare Operations</h3>
-                    <p>Hospital management has always been complex. Now, AI-powered autonomous systems are streamlining operations in ways never before possible, reducing costs and improving efficiency.</p>
+                    <p>Hospital management has always been complex. From patient scheduling to inventory management, billing to staff coordination—there are countless moving parts. Now, AI-powered autonomous systems are streamlining these operations in ways never before possible.</p>
                     <div class="blog-meta">
                         <span>Healthcare Expert</span>
                         <a href="blog/autonomous-hospital-management.html" class="read-more">Read More →</a>
@@ -347,11 +350,11 @@
                 </div>
             </div>
 
-            <div class="blog-card">
+            <div class="blog-card" data-category="hospitals">
                 <div class="blog-card-content">
-                    <span class="blog-category">Newtons Hospitals</span>
+                    <span class="blog-category hospitals">Newtons Hospitals</span>
                     <h3>AI-Powered Patient Care: Delivering Personalized Medicine at Scale</h3>
-                    <p>Personalized medicine has long been the gold standard in healthcare. AI is now making it possible to deliver truly personalized care at scale, improving outcomes for all patients.</p>
+                    <p>Personalized medicine has long been the gold standard in healthcare—treatment tailored to each patient's unique needs. But delivering personalized care at scale has been challenging. AI is changing that.</p>
                     <div class="blog-meta">
                         <span>Dr. Shiva Kolli</span>
                         <a href="blog/ai-powered-patient-care.html" class="read-more">Read More →</a>
@@ -359,16 +362,42 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="section brands-section">
+        <h2>The Newtons Ecosystem</h2>
+        <p class="section-subtitle">Three complementary platforms transforming healthcare</p>
+        
+        <div class="brands-grid">
+            <div class="brand-card ai">
+                <div class="brand-icon">⚡</div>
+                <h3>Newtons AI</h3>
+                <p>Empowering doctors with intelligent diagnostic tools that analyze medical images with unprecedented accuracy, enabling early disease detection and better patient outcomes.</p>
+            </div>
+            
+            <div class="brand-card hms">
+                <div class="brand-icon">🏥</div>
+                <h3>Newtons HMS</h3>
+                <p>The world's first fully autonomous hospital management system that streamlines administrative workflows, optimizes resource allocation, and lets medical staff focus on patient care.</p>
+            </div>
+            
+            <div class="brand-card hospitals">
+                <div class="brand-icon">❤️</div>
+                <h3>Newtons Hospitals</h3>
+                <p>AI-enhanced hospitals delivering personalized, precision medicine powered by advanced artificial intelligence and data analytics for superior patient outcomes.</p>
+            </div>
+        </div>
 
         <div style="text-align: center; margin-top: 2rem;">
-            <a href="blog.html" class="btn btn-primary">View All Articles</a>
+            <a href="brands.html" class="btn btn-primary">Learn More About Our Brands</a>
         </div>
     </section>
 
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <a href="blog.html">Blog</a>
+                <a href="index.html">Blog</a>
+                <a href="brands.html">Brands</a>
                 <a href="contact.html">Contact</a>
                 <a href="newsletter.html">Newsletter</a>
                 <a href="social-calendar.html">Social Calendar</a>
@@ -378,18 +407,39 @@
         </div>
     </footer>
 
+    <script>
+        function filterBlog(category) {
+            const cards = document.querySelectorAll('.blog-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Newtons Ecosystem",
-        "description": "AI-powered healthcare solutions",
-        "url": "https://yourusername.github.io/newtons-blog-static/",
-        "sameAs": [
-            "https://www.linkedin.com/company/newtons-ai",
-            "https://www.instagram.com/newtonsai",
-            "https://www.facebook.com/newtonsai"
-        ]
+        "@type": "WebSite",
+        "name": "Newtons Ecosystem Blog",
+        "description": "Healthcare AI insights and innovations",
+        "url": "https://shiva45678.github.io/newtons-blog-static/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://shiva45678.github.io/newtons-blog-static/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
     }
     </script>
 </body>

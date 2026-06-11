@@ -1,0 +1,204 @@
+{
+  "site": {
+    "name": "Newtons Ecosystem Blog",
+    "description": "AI-powered healthcare solutions and insights from Newtons AI, Newtons HMS, and Newtons Hospitals",
+    "url": "https://shiva45678.github.io/newtons-blog-static/",
+    "language": "en",
+    "charset": "UTF-8",
+    "lastUpdated": "2026-06-11T00:00:00Z"
+  },
+  "organization": {
+    "name": "Newtons Ecosystem",
+    "description": "Healthcare AI innovation company with three complementary platforms",
+    "focus": ["Healthcare AI", "Hospital Management", "Patient Care Innovation"],
+    "brands": [
+      {
+        "name": "Newtons AI",
+        "description": "AI-powered diagnostic tools for medical imaging",
+        "focus": "Medical diagnostics and disease detection",
+        "color": "#0066cc"
+      },
+      {
+        "name": "Newtons HMS",
+        "description": "Autonomous hospital management system",
+        "focus": "Hospital operations and administrative automation",
+        "color": "#00cc66"
+      },
+      {
+        "name": "Newtons Hospitals",
+        "description": "AI-enhanced patient care and personalized medicine",
+        "focus": "Patient outcomes and precision healthcare",
+        "color": "#cc3333"
+      }
+    ]
+  },
+  "content": {
+    "blog": {
+      "url": "https://shiva45678.github.io/newtons-blog-static/",
+      "description": "Blog articles on healthcare AI and innovation",
+      "articles": [
+        {
+          "title": "The Future of Diagnostics: How AI is Revolutionizing Medical Imaging",
+          "slug": "ai-diagnostics-medical-imaging",
+          "url": "https://shiva45678.github.io/newtons-blog-static/blog/ai-diagnostics-medical-imaging.html",
+          "brand": "Newtons AI",
+          "author": "Dr. Shiva Kolli",
+          "published": "2026-06-11",
+          "description": "Learn how AI is revolutionizing medical diagnostics with faster, more accurate disease detection",
+          "keywords": ["AI diagnostics", "medical imaging", "disease detection", "machine learning"],
+          "readTime": 8
+        },
+        {
+          "title": "Autonomous Hospital Management: The Next Era of Healthcare Operations",
+          "slug": "autonomous-hospital-management",
+          "url": "https://shiva45678.github.io/newtons-blog-static/blog/autonomous-hospital-management.html",
+          "brand": "Newtons HMS",
+          "author": "Healthcare Operations Expert",
+          "published": "2026-06-11",
+          "description": "Explore how autonomous AI systems are transforming hospital operations and improving patient care",
+          "keywords": ["hospital management", "autonomous healthcare", "healthcare efficiency", "AI operations"],
+          "readTime": 9
+        },
+        {
+          "title": "AI-Powered Patient Care: Delivering Personalized Medicine at Scale",
+          "slug": "ai-powered-patient-care",
+          "url": "https://shiva45678.github.io/newtons-blog-static/blog/ai-powered-patient-care.html",
+          "brand": "Newtons Hospitals",
+          "author": "Dr. Shiva Kolli",
+          "published": "2026-06-11",
+          "description": "Discover how AI enables personalized medicine at scale with better patient outcomes",
+          "keywords": ["personalized medicine", "patient care", "AI healthcare", "precision medicine"],
+          "readTime": 8
+        }
+      ]
+    },
+    "pages": [
+      {
+        "title": "Blog",
+        "url": "https://shiva45678.github.io/newtons-blog-static/",
+        "description": "All blog articles organized by brand"
+      },
+      {
+        "title": "Contact",
+        "url": "https://shiva45678.github.io/newtons-blog-static/contact.html",
+        "description": "Inquiry form for franchise, demo, and trial requests"
+      },
+      {
+        "title": "Newsletter",
+        "url": "https://shiva45678.github.io/newtons-blog-static/newsletter.html",
+        "description": "Email subscription for healthcare insights"
+      },
+      {
+        "title": "Social Calendar",
+        "url": "https://shiva45678.github.io/newtons-blog-static/social-calendar.html",
+        "description": "Upcoming social media posts"
+      },
+      {
+        "title": "Brand Showcase",
+        "url": "https://shiva45678.github.io/newtons-blog-static/brands.html",
+        "description": "Detailed information about each Newtons brand"
+      }
+    ]
+  },
+  "seo": {
+    "sitemap": "https://shiva45678.github.io/newtons-blog-static/sitemap.xml",
+    "robots": "https://shiva45678.github.io/newtons-blog-static/robots.txt",
+    "canonicalUrl": "https://shiva45678.github.io/newtons-blog-static/",
+    "openGraph": {
+      "enabled": true,
+      "imageUrl": "https://shiva45678.github.io/newtons-blog-static/og-image.png"
+    },
+    "structuredData": {
+      "enabled": true,
+      "formats": ["JSON-LD", "microdata"]
+    }
+  },
+  "social": {
+    "platforms": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/company/newtons-ai",
+        "handle": "newtons-ai"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/newtonsai",
+        "handle": "newtonsai"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/newtonsai",
+        "handle": "newtonsai"
+      },
+      {
+        "name": "YouTube",
+        "url": "https://www.youtube.com/c/newtonsai",
+        "handle": "newtonsai"
+      }
+    ]
+  },
+  "contact": {
+    "email": "contact@newtons.in",
+    "website": "https://newtons.in",
+    "support": "support@newtons.in",
+    "inquiryTypes": [
+      "franchise",
+      "hms_demo",
+      "ai_trial"
+    ]
+  },
+  "technical": {
+    "type": "static-html",
+    "responsive": true,
+    "mobileOptimized": true,
+    "performanceOptimized": true,
+    "accessibility": "WCAG 2.1 AA",
+    "updateFrequency": "weekly",
+    "cacheControl": "public, max-age=3600"
+  },
+  "keywords": {
+    "primary": [
+      "healthcare AI",
+      "medical diagnostics",
+      "hospital management system",
+      "AI-powered patient care",
+      "personalized medicine",
+      "autonomous healthcare",
+      "medical imaging AI",
+      "healthcare innovation",
+      "precision medicine",
+      "AI in healthcare"
+    ],
+    "secondary": [
+      "machine learning healthcare",
+      "clinical decision support",
+      "hospital operations",
+      "healthcare automation",
+      "medical technology",
+      "healthcare efficiency",
+      "patient outcomes",
+      "healthcare trends",
+      "digital health",
+      "medical AI"
+    ]
+  },
+  "metadata": {
+    "generator": "Static HTML Site Generator",
+    "version": "1.0.0",
+    "license": "© 2026 Newtons Ecosystem. All rights reserved.",
+    "attribution": "Required when republishing"
+  },
+  "apiEndpoints": {
+    "blogListing": "/index.html",
+    "blogPost": "/blog/{slug}.html",
+    "sitemap": "/sitemap.xml",
+    "robots": "/robots.txt",
+    "aiDiscovery": "/ai.json",
+    "llmsDiscovery": "/llms.txt"
+  },
+  "integrationGuides": {
+    "contentCrawling": "Respect robots.txt, use canonical URLs, parse JSON-LD structured data",
+    "dataExtraction": "All content in HTML format with JSON-LD structured data",
+    "linkFollowing": "Internal links use relative paths, external links to official websites"
+  }
+}
